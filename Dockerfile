@@ -1,10 +1,11 @@
-FROM debian:stretch
+FROM armhf/debian
 
 ARG PI_TOOLS_GIT_REF=master
 ARG RUST_VERSION=stable
 
 # update system
 RUN apt-get update
+RUN apt-get -f install
 RUN apt-get install -y curl git gcc xz-utils
 
 # config and set variables

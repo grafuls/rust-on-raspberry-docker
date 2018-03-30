@@ -27,5 +27,5 @@ export SYSROOT="$HOME/pi-tools/arm-bcm2708/arm-bcm2708hardfp-linux-gnueabi/arm-b
 export CC="$TOOLCHAIN/gcc-sysroot";
 export AR="$TOOLCHAIN/arm-linux-gnueabihf-ar";
 
-flags="--target=arm-unknown-linux-gnueabihf";
+flags="--target=armv7-unknown-linux-gnueabihf";
 $HOME/.cargo/bin/cargo $@ $flags;
